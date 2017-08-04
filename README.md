@@ -1,6 +1,4 @@
-# Thinking-With-Portals
-Messing with ARkit portals in Unity.
-
+# Thinking With Portals
 This project shows you how to setup basic ARKit portals inside Unity using a combination of Render Textures, Depth Masks, and Layers.
 
 - Unity 2017.1
