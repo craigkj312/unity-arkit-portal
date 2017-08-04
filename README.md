@@ -1,6 +1,12 @@
 # Thinking With Portals
+
+<p align="center">
+  <img src="readme_img/example-run.gif" width="266">
+</p>
+
 This project shows you how to setup basic ARKit portals inside Unity using a combination of Render Textures, Depth Masks, and Layers.
 
+Software Used:
 - Unity 2017.1
 - Unity ARKit Plugin 1.0.6
 - Xcode 9 Beta 4
