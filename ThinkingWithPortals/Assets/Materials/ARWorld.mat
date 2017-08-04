@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: YUVMaterial
-  m_Shader: {fileID: 4800000, guid: ef7b8eec959eb4f1e9fa97bc86273848, type: 3}
+  m_Name: ARWorld
+  m_Shader: {fileID: 4800000, guid: 41a7d99507b834a9485d3876932cc17b, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 8400000, guid: 2702da6d0ea194fb390c4a07e05a9557, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -54,18 +54,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _textureCbCr:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 2, y: 2}
-        m_Offset: {x: -1, y: -1}
-    - _textureCrCb:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _textureY:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 2, y: 2}
-        m_Offset: {x: -1, y: -1}
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -83,8 +71,6 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _isPortrait: 0
-    - _texCoordScale: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
