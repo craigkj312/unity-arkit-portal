@@ -8,8 +8,8 @@ This project shows you how to setup basic ARKit portals inside Unity using a com
 
 Software Used:
 - Unity 2017.1
-- Unity ARKit Plugin 1.0.6
-- Xcode 9 Beta 4
-- iOS 11
+- Unity ARKit Plugin 1.0.7
+- Xcode 9 beta 5
+- iOS 11 beta 5
 
 Portal shader from https://github.com/pr0g/unity-portal-rendering
