@@ -1937,6 +1937,46 @@ Prefab:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 11818613}
+    - target: {fileID: 20297542749229120, guid: 59c7a9859314241f0ac2d97e1e87cc45,
+        type: 2}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294966783
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986237150051288, guid: 59c7a9859314241f0ac2d97e1e87cc45, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851288354657872, guid: 59c7a9859314241f0ac2d97e1e87cc45, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905228305362194, guid: 59c7a9859314241f0ac2d97e1e87cc45, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1342146052893092, guid: 59c7a9859314241f0ac2d97e1e87cc45, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086523680570496, guid: 59c7a9859314241f0ac2d97e1e87cc45, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 23921046278929140, guid: 59c7a9859314241f0ac2d97e1e87cc45,
+        type: 2}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23678199152278532, guid: 59c7a9859314241f0ac2d97e1e87cc45,
+        type: 2}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23853357430110100, guid: 59c7a9859314241f0ac2d97e1e87cc45,
+        type: 2}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59c7a9859314241f0ac2d97e1e87cc45, type: 2}
   m_IsPrefabParent: 0
