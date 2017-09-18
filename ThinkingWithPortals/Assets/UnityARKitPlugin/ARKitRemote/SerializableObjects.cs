@@ -144,29 +144,29 @@ namespace Utils
 		public ARTrackingState trackingState;
 		public ARTrackingStateReason trackingReason;
 		public UnityVideoParams videoParams;
-		public float ambientIntensity;
+		public UnityARLightEstimate lightEstimation;
 		public serializablePointCloud pointCloud;
 
 
-		public serializableUnityARCamera( serializableUnityARMatrix4x4 wt, serializableUnityARMatrix4x4 pm, ARTrackingState ats, ARTrackingStateReason atsr, UnityVideoParams uvp, float ambIntensity, serializablePointCloud spc)
+		public serializableUnityARCamera( serializableUnityARMatrix4x4 wt, serializableUnityARMatrix4x4 pm, ARTrackingState ats, ARTrackingStateReason atsr, UnityVideoParams uvp, UnityARLightEstimate lightEst, serializablePointCloud spc)
 		{
 			worldTransform = wt;
 			projectionMatrix = pm;
 			trackingState = ats;
 			trackingReason = atsr;
 			videoParams = uvp;
-			ambientIntensity = ambIntensity;
+			lightEstimation = lightEst;
 			pointCloud = spc;
 		}
 
 		public static implicit operator serializableUnityARCamera(UnityARCamera rValue)
 		{
-			return new serializableUnityARCamera(rValue.worldTransform, rValue.projectionMatrix, rValue.trackingState, rValue.trackingReason, rValue.videoParams, rValue.ambientIntensity, rValue.pointCloudData);
+			return new serializableUnityARCamera(rValue.worldTransform, rValue.projectionMatrix, rValue.trackingState, rValue.trackingReason, rValue.videoParams, rValue.lightEstimation, rValue.pointCloudData);
 		}
 
 		public static implicit operator UnityARCamera(serializableUnityARCamera rValue)
 		{
-			return new UnityARCamera (rValue.worldTransform, rValue.projectionMatrix, rValue.trackingState, rValue.trackingReason, rValue.videoParams, rValue.ambientIntensity, rValue.pointCloud);
+			return new UnityARCamera (rValue.worldTransform, rValue.projectionMatrix, rValue.trackingState, rValue.trackingReason, rValue.videoParams, rValue.lightEstimation, rValue.pointCloud);
 		}
 
 
@@ -285,14 +285,14 @@ namespace Utils
 			enableLightEstimation = enableLightEst;
 		}
 
-		public static implicit operator serializableARSessionConfiguration(ARKitWorldTackingSessionConfiguration awtsc)
+		public static implicit operator serializableARSessionConfiguration(ARKitWorldTrackingSessionConfiguration awtsc)
 		{
 			return new serializableARSessionConfiguration (awtsc.alignment, awtsc.planeDetection, awtsc.getPointCloudData, awtsc.enableLightEstimation);
 		}
 
-		public static implicit operator ARKitWorldTackingSessionConfiguration (serializableARSessionConfiguration sasc)
+		public static implicit operator ARKitWorldTrackingSessionConfiguration (serializableARSessionConfiguration sasc)
 		{
-			return new ARKitWorldTackingSessionConfiguration (sasc.alignment, sasc.planeDetection, sasc.getPointCloudData, sasc.enableLightEstimation);
+			return new ARKitWorldTrackingSessionConfiguration (sasc.alignment, sasc.planeDetection, sasc.getPointCloudData, sasc.enableLightEstimation);
 		}
 	};
 

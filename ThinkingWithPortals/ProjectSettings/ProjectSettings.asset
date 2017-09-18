@@ -144,7 +144,7 @@ PlayerSettings:
     Android: com.Company.ProductName
     Standalone: unity.Unity Technologies.Native Rendering Plugin Example
     Tizen: com.Company.ProductName
-    iOS: com.kcraig.thinkingwithportals
+    iOS: com.unity.thinkingwithportals
     tvOS: com.Company.ProductName
   buildNumber:
     iOS: 0
@@ -452,6 +452,9 @@ PlayerSettings:
   switchUdpSendBufferSize: 9
   switchUdpReceiveBufferSize: 42
   switchSocketBufferEfficiency: 4
+  switchSocketInitializeEnabled: 1
+  switchNetworkInterfaceManagerInitializeEnabled: 1
+  switchPlayerConnectionEnabled: 1
   ps4NPAgeRating: 12
   ps4NPTitleSecret: 
   ps4NPTrophyPackPath: 
